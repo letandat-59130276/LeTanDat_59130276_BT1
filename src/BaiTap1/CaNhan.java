@@ -9,59 +9,63 @@ package BaiTap1;
  *
  * @author Con Meo Cutee
  */
-public abstract class CaNhan {
-
-protected String hoTen;
-protected int tuoi;
-protected String diaChi;
-protected String sdt;
-  
-public String getHoten() 
+public abstract class CaNhan 
 {
-    return hoTen;
-}
-public void setHoten(String hoten) 
-{
-    this.hoTen = hoTen;
-}
-    
-
-public int getTuoi() 
-{
-    return tuoi;
-}
-public void setTuoi(int tuoi) 
-{
-    this.tuoi = tuoi;
-}
+    protected String hoTen;
+    protected int tuoi;
+    protected String diaChi;
+    protected String sdt;
 
     
-public String getDiaChi() 
-{
-    return diaChi;
-}
-public void setDiaChi(String diaChi) 
-{
-    this.diaChi = diaChi;
-}
-
-    
-public String getSdt() 
-{
-    return sdt;
-}
-public void setSdt(String sdt) 
-{
-    this.sdt = sdt;
-}
+    public String getHoten() 
+    {
+        return hoTen;
+    }
+    public void setHoten(String hoten) 
+    {
+        this.hoTen = hoTen;
+    }
 
 
-    public CaNhan(String hoten, int tuoi, String diaChi, String sdt) {
+    public int getTuoi() 
+    {
+        return tuoi;
+    }
+    public void setTuoi(int tuoi) 
+    {
+        this.tuoi = tuoi;
+    }
+
+
+    public String getDiaChi() 
+    {
+        return diaChi;
+    }
+    public void setDiaChi(String diaChi) 
+    {
+        this.diaChi = diaChi;
+    }
+
+
+    public String getSdt() 
+    {
+        return sdt;
+    }
+    public void setSdt(String sdt) 
+    {
+        this.sdt = sdt;
+    }
+
+
+    public CaNhan(String hoten, int tuoi, String diaChi, String sdt) 
+    {
         this.hoTen = hoTen;
         this.tuoi = tuoi;
         this.diaChi = diaChi;
         this.sdt = sdt;
     }
+
     
     
+    public abstract String HienThiThongTin();
 }
