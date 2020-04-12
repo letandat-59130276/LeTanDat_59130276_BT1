@@ -43,6 +43,14 @@ public class GiaoVien extends CaNhan {
 
     @Override
     public String hienThiTT() {
+        return "Hoten: " + getHoten() + " -- Tuoi:" + getTuoi() + " -- Dia chi: " + getDiaChi() + " -- So dien thoai: "+ getSdt() + " -- Mon day: " + getMonDay() + " -- To bo mon: "+getToBoMon();
+    }
+
+    private String getMonDay() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private String getToBoMon() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
