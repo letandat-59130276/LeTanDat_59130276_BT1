@@ -16,8 +16,8 @@ public class Main {
     {
         //Hoc sinh
         HocSinh hs1 = new HocSinh("Le Tan Dat", 20, "Dien Khanh - Khanh Hoa", "0395845874", "59.CNTT-2", "Ca hat");
-        HocSinh hs2 = new HocSinh("Dinh Thi My", 20, "Thai Ninh - Bac Giang", "0354845795", "59CNTT-2", "The thao");
-        HocSinh hs3 = new HocSinh("Tran Nhan Tam", 22, "Hoang Liem - Ha Noi", "0654856952", "59CNTT-2", "Boi loi");
+        HocSinh hs2 = new HocSinh("Dinh Thi My", 20, "Thai Ninh - Bac Giang", "0354845795", "59.CNTT-2", "The thao");
+        HocSinh hs3 = new HocSinh("Tran Nhan Tam", 22, "Hoang Liem - Ha Noi", "0654856952", "59.CNTT-2", "Boi loi");
         //Giao vien    
         GiaoVien gv1 = new GiaoVien("Huynh Tuan Anh", 40, "Nha Trang - Khanh Hoa", "0999123456", "Design Pattern", "IT");
         GiaoVien gv2 = new GiaoVien("Mai Cuong Tho",35, "Nha Trang - Khanh Hoa", "0985465851", "Computer Networks", "IT");
