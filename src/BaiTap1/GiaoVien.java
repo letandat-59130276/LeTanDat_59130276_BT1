@@ -9,6 +9,8 @@ package BaiTap1;
  *
  * @author Con Meo Cutee
  */
-public class GiaoVien {
+public class GiaoVien extends CaNhan {
+    private String monDay;
+    private String toBoMon;
     
 }
