@@ -41,6 +41,6 @@ public class HocSinh extends CaNhan
 
     @Override
     String hienThiTT() {
-        return "Hoten: " + getHoten() + "-- Tuoi: " + getTuoi() + "-- Dia chi: " + getDiaChi() + "-- So dien thoai: " + getSdt() + "-- Lop: " + getLop() + "-- Nang khieu: " + getNangKhieu();
+        return "Hoten: " + getHoten() + " -- Tuoi: " + getTuoi() + " -- Dia chi: " + getDiaChi() + " -- So dien thoai: " + getSdt() + " -- Lop: " + getLop() + " -- Nang khieu: " + getNangKhieu();
     }
 }
