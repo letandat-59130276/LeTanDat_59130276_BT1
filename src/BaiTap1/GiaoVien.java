@@ -13,4 +13,36 @@ public class GiaoVien extends CaNhan {
     private String monDay;
     private String toBoMon;
     
+    
+    public String getmonDay() 
+    {
+        return monDay;
+    }
+    public void setmonDay(String monDay) 
+    {
+        this.monDay = monDay;
+    }
+
+    
+    public String gettoBoMon() 
+    {
+        return toBoMon;
+    }
+    public void settoBoMon(String toBoMon) 
+    {
+        this.toBoMon = toBoMon;
+    }
+
+    
+    public GiaoVien(String hoten, int tuoi, String diaChi, String sdt, String monDay, String toBoMon) 
+    {
+        super(hoten, tuoi, diaChi, sdt);
+        this.monDay = monDay;
+        this.toBoMon = toBoMon;
+    }
+
+    @Override
+    public String hienThiTT() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
