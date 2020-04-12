@@ -10,50 +10,64 @@ import java.util.ArrayList;
  *
  * @author Con Meo Cutee
  */
-public class QLDS implements IQLDS {
+public class QLDS implements IQLDS 
+{
     private ArrayList<CaNhan> ds = new ArrayList<>();
 
-    public ArrayList<CaNhan> getDs() {
+    
+    public ArrayList<CaNhan> getDs() 
+    {
         return ds;
     }
-
-    public void setDs(ArrayList<CaNhan> ds) {
+    public void setDs(ArrayList<CaNhan> ds) 
+    {
         this.ds = ds;
     }
 
+    
     @Override
-    public int them(CaNhan caNhan) {
-        for(int i=0;i<ds.size();i++){
-            if(ds.get(i).equals(caNhan)){
+    public int them(CaNhan caNhan) 
+    {
+        for(int i=0;i<ds.size();i++)
+        {
+            if(ds.get(i).equals(caNhan))
+            {
                 return 0;
             }
         }
         ds.add(caNhan);
         return 1;
-
     }
 
+    
     @Override
-    public int xoa(String ten) {
-        if (ds.isEmpty()) {
+    public int xoa(String ten) 
+    {
+        if (ds.isEmpty()) 
+        {
             return 0;
         } else {
             int j = -1;
-            for (int i = 0; i < ds.size(); i++) {
-                if (ten.equals(ds.get(i).getHoten())) {
+            for (int i = 0; i < ds.size(); i++) 
+            {
+                if (ten.equals(ds.get(i).getHoten())) 
+                {
                     j = i;
                     break;
                 }
             }
-            if (j > -1) {
+            if (j > -1) 
+            {
                 ds.remove(j);
                 return 1;
             } else return 0;
         }
     }
 
+    
     @Override
-    public void inDS(ArrayList<CaNhan> ds) {
+    public void inDS(ArrayList<CaNhan> ds) 
+    {
         for (int i = 0; i < ds.size(); i++) {
             System.out.println(ds.get(i).hienThiTT());
         }

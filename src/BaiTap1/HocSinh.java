@@ -31,16 +31,21 @@ public class HocSinh extends CaNhan
         this.lop = lop;
     }
 
-    public String getNangKhieu() {
+    
+    public String getNangKhieu() 
+    {
         return nangKhieu;
     }
 
-    public void setNangKhieu(String nangKhieu) {
+    public void setNangKhieu(String nangKhieu) 
+    {
         this.nangKhieu = nangKhieu;
     }
 
+    
     @Override
-    String hienThiTT() {
+    String hienThiTT() 
+    {
         return "Hoten: " + getHoten() + " -- Tuoi: " + getTuoi() + " -- Dia chi: " + getDiaChi() + " -- So dien thoai: " + getSdt() + " -- Lop: " + getLop() + " -- Nang khieu: " + getNangKhieu();
     }
 }

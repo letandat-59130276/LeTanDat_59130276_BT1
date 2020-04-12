@@ -9,34 +9,43 @@ package BaiTap1;
  *
  * @author Con Meo Cutee
  */
-public class GiaoVien extends CaNhan {
+public class GiaoVien extends CaNhan 
+{
     private String monDay;
     private String toBoMon;
 
-    public String getMonDay() {
+    
+    public String getMonDay() 
+    {
         return monDay;
     }
-
-    public void setMonDay(String monDay) {
+    public void setMonDay(String monDay) 
+    {
         this.monDay = monDay;
     }
+    
 
-    public String getToBoMon() {
+    public String getToBoMon() 
+    {
         return toBoMon;
     }
-
-    public void setToBoMon(String toBoMon) {
+    public void setToBoMon(String toBoMon) 
+    {
         this.toBoMon = toBoMon;
     }
+    
 
-    public GiaoVien(String hoten, int tuoi, String diaChi, String sdt, String monDay, String toBoMon) {
+    public GiaoVien(String hoten, int tuoi, String diaChi, String sdt, String monDay, String toBoMon) 
+    {
         super(hoten, tuoi, diaChi, sdt);
         this.monDay = monDay;
         this.toBoMon = toBoMon;
     }
 
+    
     @Override
-    String hienThiTT() {
+    String hienThiTT() 
+    {
         return "Hoten: " + getHoten() + " -- Tuoi:" + getTuoi() + " -- Dia chi: " + getDiaChi() + " -- So dien thoai: " + getSdt() + " -- Mon day: " + getMonDay() + " -- To bo mon: " + getToBoMon();
     }
 }

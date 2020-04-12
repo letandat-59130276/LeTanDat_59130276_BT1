@@ -11,7 +11,8 @@ import java.util.ArrayList;
  *
  * @author Con Meo Cutee
  */
-public interface IQLDS {
+public interface IQLDS 
+{
     public int them(CaNhan caNhan);
     public int xoa(String ten);
     public void inDS(ArrayList<CaNhan> ds);
