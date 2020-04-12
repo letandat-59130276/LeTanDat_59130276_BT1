@@ -9,6 +9,10 @@ package BaiTap1;
  *
  * @author Con Meo Cutee
  */
-public class CaNhan {
-    
+public abstract class CaNhan {
+
+  protected String hoTen;
+  protected int tuoi;
+  protected String diaChi;
+  protected String sdt;
 }
