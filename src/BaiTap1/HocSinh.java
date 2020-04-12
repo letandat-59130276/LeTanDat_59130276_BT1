@@ -42,6 +42,22 @@ public class HocSinh extends CaNhan
         this.nangKhieu = nangKhieu;
     }
 
+    public void setlop(String lop) 
+    { 
+        this.lop = lop; 
+    }
+    public void setnangKhieu(String nangKhieu) 
+    { 
+        this.nangKhieu = nangKhieu; 
+    }
+    public String getlop() 
+    {
+        return this.lop; 
+    }
+    public String getnangKhieu() 
+    { 
+        return this.nangKhieu; 
+    }
     
     @Override
     String hienThiTT() 
