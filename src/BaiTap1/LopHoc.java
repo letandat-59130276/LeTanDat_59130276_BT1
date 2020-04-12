@@ -4,34 +4,29 @@
  * and open the template in the editor.
  */
 package BaiTap1;
+import java.util.ArrayList;
 /**
  *
  * @author Con Meo Cutee
  */
 public class LopHoc {
-    private final QLDS dsHS = new QLDS();
-    private final QLDS dsGV = new QLDS();
+    private QLDS dsHS = new QLDS();
+    private QLDS dsGV = new QLDS();
 
-    public int themHS(HocSinh hocSinh)
-    {
-        dsHS.them( hocSinh);
-        return 1;
-    }
-    
-    public int inDSHS()
-    {
-        dsHS.inDS(dsHS.getDs());
-        return 1;
-    }
+   public int themHS(HocSinh hocSinh){
+       dsHS.them( hocSinh);
+       return 1;
+   }
+   public int inDSHS(){
+      dsHS.inDS(dsHS.getDs());
+      return 1;
+   }
 
-    public int themGV(GiaoVien giaoVien)
-    {
+    public int themGV(GiaoVien giaoVien){
         dsGV.them( giaoVien);
         return 1;
     }
-    
-    public int  inDSGV()
-    {
+    public int  inDSGV(){
         dsGV.inDS(dsGV.getDs());
         return 1;
     }

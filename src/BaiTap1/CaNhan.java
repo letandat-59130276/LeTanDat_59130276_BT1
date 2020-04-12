@@ -9,63 +9,50 @@ package BaiTap1;
  *
  * @author Con Meo Cutee
  */
-public abstract class CaNhan 
-{
-    protected String hoTen;
-    protected int tuoi;
-    protected String diaChi;
-    protected String sdt;
+abstract public class CaNhan {
+    private String hoten;
+    private int tuoi;
+    private String diaChi;
+    private String sdt;
 
-    
-    public String getHoten() 
-    {
-        return hoTen;
-    }
-    public void setHoten(String hoten) 
-    {
-        this.hoTen = hoTen;
+    public String getHoten() {
+        return hoten;
     }
 
+    public void setHoten(String hoten) {
+        this.hoten = hoten;
+    }
 
-    public int getTuoi() 
-    {
+    public int getTuoi() {
         return tuoi;
     }
-    public void setTuoi(int tuoi) 
-    {
+
+    public void setTuoi(int tuoi) {
         this.tuoi = tuoi;
     }
 
-
-    public String getDiaChi() 
-    {
+    public String getDiaChi() {
         return diaChi;
     }
-    public void setDiaChi(String diaChi) 
-    {
+
+    public void setDiaChi(String diaChi) {
         this.diaChi = diaChi;
     }
 
-
-    public String getSdt() 
-    {
+    public String getSdt() {
         return sdt;
     }
-    public void setSdt(String sdt) 
-    {
+
+    public void setSdt(String sdt) {
         this.sdt = sdt;
     }
 
-
-    public CaNhan(String hoten, int tuoi, String diaChi, String sdt) 
-    {
-        this.hoTen = hoTen;
+    public CaNhan(String hoten, int tuoi, String diaChi, String sdt) {
+        this.hoten = hoten;
         this.tuoi = tuoi;
         this.diaChi = diaChi;
         this.sdt = sdt;
     }
 
-    
-    
-    public abstract String hienThiTT();
+    abstract String hienThiTT();
 }

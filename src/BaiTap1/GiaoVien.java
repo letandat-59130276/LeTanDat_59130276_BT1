@@ -9,49 +9,38 @@ package BaiTap1;
  *
  * @author Con Meo Cutee
  */
-public class GiaoVien extends CaNhan 
-{
+public class GiaoVien extends CaNhan {
     private String monDay;
     private String toBoMon;
-    
-    
-    public String getmonDay() 
-    {
+
+    public String getMonDay() {
         return monDay;
     }
-    public void setmonDay(String monDay) 
-    {
+
+    public void setMonDay(String monDay) {
         this.monDay = monDay;
     }
 
-    
-    public String gettoBoMon() 
-    {
+    public String getToBoMon() {
         return toBoMon;
     }
-    public void settoBoMon(String toBoMon) 
-    {
+
+    public void setToBoMon(String toBoMon) {
         this.toBoMon = toBoMon;
     }
 
-    
-    public GiaoVien(String hoten, int tuoi, String diaChi, String sdt, String monDay, String toBoMon) 
-    {
+    public GiaoVien(String hoten, int tuoi, String diaChi, String sdt, String monDay, String toBoMon) {
         super(hoten, tuoi, diaChi, sdt);
         this.monDay = monDay;
         this.toBoMon = toBoMon;
     }
 
     @Override
-    public String hienThiTT() {
-        return "Hoten: " + getHoten() + " -- Tuoi:" + getTuoi() + " -- Dia chi: " + getDiaChi() + " -- So dien thoai: "+ getSdt() + " -- Mon day: " + getMonDay() + " -- To bo mon: "+getToBoMon();
-    }
-
-    private String getMonDay() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    private String getToBoMon() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    String hienThiTT() {
+        return "Hoten:"+getHoten()+",Tuoi:"+getTuoi()
+                +", Dia chi: "+getDiaChi()+
+                ", So dien thoai:"+getSdt()+
+                ",Mon day:"+getMonDay()+
+                ",To bo mon:"+getToBoMon();
     }
 }
