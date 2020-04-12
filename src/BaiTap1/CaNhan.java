@@ -66,15 +66,39 @@ abstract public class CaNhan
         this.sdt = sdt;
     }
 
-    // getter, setter
-    public void sethoTen(String hoTen) { this.hoTen = hoTen; }
-    public void settuoi(int tuoi) { this.tuoi = tuoi; }
-    public void setdiaChi(String diaChi) { this.diaChi = diaChi; }
-    public void setsdt(String sdt) { this.sdt = sdt; }
-    public String gethoTen() { return this.hoTen; }
-    public int gettuoi() { return this.tuoi; }
-    public String getdiaChi() { return this.diaChi; }
-    public String getsdt() { return this.sdt; }
+    // Them Getter va Setter
+    public void sethoTen(String hoTen) 
+    { 
+        this.hoTen = hoTen; 
+    }
+    public void settuoi(int tuoi) 
+    { 
+        this.tuoi = tuoi; 
+    }
+    public void setdiaChi(String diaChi) 
+    { 
+        this.diaChi = diaChi; 
+    }
+    public void setsdt(String sdt) 
+    { 
+        this.sdt = sdt; 
+    }
+    public String gethoTen() 
+    { 
+        return this.hoTen; 
+    }
+    public int gettuoi() 
+    { 
+        return this.tuoi; 
+    }
+    public String getdiaChi() 
+    { 
+        return this.diaChi; 
+    }
+    public String getsdt() 
+    { 
+        return this.sdt; 
+    }
     
     abstract String hienThiTT();
 }
