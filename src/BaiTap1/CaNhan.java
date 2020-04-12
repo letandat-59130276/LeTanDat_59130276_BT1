@@ -67,5 +67,5 @@ public abstract class CaNhan
 
     
     
-    public abstract String HienThiThongTin();
+    public abstract String hienThiTT();
 }
