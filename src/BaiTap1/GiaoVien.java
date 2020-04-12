@@ -43,6 +43,12 @@ public class GiaoVien extends CaNhan
     }
 
     
+    public void setmonDay(String monDay) { this.monDay = monDay; }
+    public void settoBoMon(String toBoMon) { this.toBoMon = toBoMon; }
+    public String getmonDay() { return this.monDay; }
+    public String gettoBoMon() { return this.toBoMon; }
+    
+    
     @Override
     String hienThiTT() 
     {
