@@ -11,7 +11,8 @@ import BaiTap1.LopHoc;
  *
  * @author Con Meo Cutee
  */
-public class Main {
+public class Main 
+{
     public static void main(String[] args) 
     {
         //Hoc sinh
