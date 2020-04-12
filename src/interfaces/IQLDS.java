@@ -4,11 +4,15 @@
  * and open the template in the editor.
  */
 package interfaces;
+import BaiTap1.CaNhan;
+import java.util.ArrayList;
 
 /**
  *
  * @author Con Meo Cutee
  */
 public interface IQLDS {
-    
+    public int them(CaNhan caNhan);
+    public int xoa(String ten);
+    public void inDS(ArrayList<CaNhan> ds);
 }
